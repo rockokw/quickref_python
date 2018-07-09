@@ -8,21 +8,26 @@ if __name__ == "__main__":
     parser.add_argument('num', type=int,
                         help='required number')
 
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help='optional flag')
+
     args = parser.parse_args()
     print args
 
-
-# ❯ ./main.py -h
-# usage: main.py [-h] num
+# > ./main.py -h
+# usage: main.py [-h] [--verbose] num
 #
 # General description
 #
 # positional arguments:
-#   num         required number
+#   num            required number
 #
 # optional arguments:
-#   -h, --help  show this help message and exit
+#   -h, --help     show this help message and exit
+#   --verbose, -v  optional flag
 #
+# > ./main.py 10
+# Namespace(num=10, verbose=False)
 #
-# ❯ ./main.py 10
-# Namespace(num=10)
+# > ./main.py -v 10
+# Namespace(num=10, verbose=True)
