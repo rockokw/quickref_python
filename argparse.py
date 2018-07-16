@@ -1,5 +1,8 @@
 #!/usr/bin/env python2.7
 
+'''argparse.py: argparse example.'''
+__author__ = 'Kwame Wright'
+
 import argparse
 
 if __name__ == "__main__":
