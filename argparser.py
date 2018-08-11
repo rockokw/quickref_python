@@ -1,6 +1,6 @@
 #!/usr/bin/env python2.7
 
-'''argparse.py: argparse example.'''
+'''argparser.py: argparse example.'''
 __author__ = 'Kwame Wright'
 
 import argparse
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     print args
 
-# > ./main.py -h
+# > ./argparser.py -h
 # usage: main.py [-h] [--verbose] num
 #
 # General description
@@ -29,8 +29,8 @@ if __name__ == "__main__":
 #   -h, --help     show this help message and exit
 #   --verbose, -v  optional flag
 #
-# > ./main.py 10
+# > ./argparser.py 10
 # Namespace(num=10, verbose=False)
 #
-# > ./main.py -v 10
+# > ./argparser.py -v 10
 # Namespace(num=10, verbose=True)
