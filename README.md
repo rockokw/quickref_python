@@ -6,7 +6,7 @@ Quick reference for various Python modules
 Here are some links to help navigate the repository...
 
 ### argparse
-[Examples](argparse.py)
+[Examples](argparser.py) - [cat](cat.py)
 
 ### pickle
 [Pickle Viewer Script](pickle_viewer.py)
