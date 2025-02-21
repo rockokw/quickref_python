@@ -1,21 +1,17 @@
-#!/usr/bin/env python2.7
-
-'''argparser.py: argparse example.'''
-__author__ = 'Kwame Wright'
-
+#!/usr/bin/env python3
 import argparse
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='General description')
+    parser = argparse.ArgumentParser(description="General description")
 
-    parser.add_argument('num', type=int,
-                        help='required number')
+    parser.add_argument("num", type=int, help="required number")
 
-    parser.add_argument('--verbose', '-v', action='store_true',
-                        help='optional flag')
+    parser.add_argument(
+        "--verbose", "-v", action="store_true", help="optional flag"
+    )
 
     args = parser.parse_args()
-    print args
+    print(args)
 
 # > ./argparser.py -h
 # usage: main.py [-h] [--verbose] num
